@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.super_lawyer_121.RegTwoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center|left"
+            android:background="#FF0E7FE8"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/reg_two_back_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FF0E7FE8"
+                android:onClick="reg_two_back_onclick"
+                android:text="上一步"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/reg_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="注册 2/3"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></View>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.5"
+            android:padding="20dp">
+            <LinearLayout
+                android:id="@+id/ll_up"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/reg_lawyerPro"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ask_title_style"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:hint="您的省份"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="#ffb8b8b8"
+                    android:textColorHint="#ffb8b8b8"
+                    android:textSize="16sp" />
+                <EditText
+                    android:layout_weight="1"
+                    android:id="@+id/reg_lawyercity"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/ask_title_style"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:hint="您的城市"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="#ffb8b8b8"
+                    android:textColorHint="#ffb8b8b8"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_reg_officename"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/ll_up"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ask_title_style"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:hint="请输入您所在事务所的名字"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#ffb8b8b8"
+                android:textColorHint="#ffb8b8b8"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_reg_lawyersdept"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/et_reg_officename"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ask_title_style"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:hint="请输入您擅长的领域"
+                android:inputType="text"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:phoneNumber="true"
+
+                android:textColor="#ffb8b8b8"
+                android:textColorHint="#ffb8b8b8"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/et_reg_years"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/et_reg_lawyersdept"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ask_title_style"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:hint="请输入您的从业时间 例如：4"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#ffb8b8b8"
+                android:textColorHint="#ffb8b8b8"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/ToTwoButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ask_button_style"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
